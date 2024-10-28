@@ -36,6 +36,7 @@ function createNoteElement(text, index = null) {
   editBtn.addEventListener('click', () => editNote(text, index || getNoteIndex(text)));
 
   const deleteBtn = document.createElement('button');
+  deleteBtn.style.backgroundColor = 'maroon';
   deleteBtn.textContent = 'Delete';
   deleteBtn.addEventListener('click', () => {
     noteDiv.remove();
